@@ -6,23 +6,28 @@ function Counter(props) {
 
   // onClick={setCounter((prev) => prev + 1)}>
   // onClick={setCounter((prev) => prev - 1)}
+
+  const decrement = () => {
+    if (counter > 0) {
+      setCounter((prev) => prev - 1);
+    }
+  };
+
+  const increment = () => {
+    setCounter((prev) => prev + 1);
+  };
+
   return (
     <div>
       <p className="counter-tittle">{props.childrens}</p>
       <p className="counter-subtittle">{props.children}</p>
 
       <div className="counter-wrapper">
-        <button
-          className="increment-btn"
-          onClick={() => setCounter((prev) => prev + 1)}
-        >
+        <button className="increment-btn" onClick={increment}>
           +
         </button>
         <span className="counter-number">{counter}</span>
-        <button
-          className="decrement-btn"
-          onClick={() => setCounter((prev) => prev - 1)}
-        >
+        <button className="decrement-btn" onClick={decrement}>
           -
         </button>
       </div>
