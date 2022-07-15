@@ -4,9 +4,6 @@ import "./Counter.css";
 function Counter(props) {
   let [counter, setCounter] = useState(0);
 
-  // onClick={setCounter((prev) => prev + 1)}>
-  // onClick={setCounter((prev) => prev - 1)}
-
   const decrement = () => {
     if (counter > 0) {
       setCounter((prev) => prev - 1);
