@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Stay from "./windBnb/Stay";
+import Counter from "./windBnb/Counter";
 
+const stays = [
+  {
+    rating: 4.5,
+    category: "Entire Apartment ",
+    title: "Stylish Appartment in center of the city",
+    img: "https://picsum.photos/500/300?random=1",
+  },
+  {
+    rating: 4.25,
+    category: "Private Room",
+    title: "Cozy and Peaceful",
+    img: "https://picsum.photos/500/300?random=2",
+  },
+  {
+    rating: 4.85,
+    category: "Entire House",
+    title: "Modern Room",
+    img: "https://picsum.photos/500/300?random=3",
+  },
+  {
+    rating: 4.54,
+    category: "Private Room",
+    title: "Modern Apartment",
+    img: "https://picsum.photos/500/300?random=4",
+  },
+];
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="flex-container">
+        {stays.map((stay, index) => (
+          <Stay key={index} stay={stay}></Stay>
+        ))}
+      </div>
+      <Counter childrens="Adults">Age 13 or above</Counter>
     </div>
   );
 }

@@ -1,0 +1,17 @@
+.counter-tittle {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.counter-subtittle {
+  font-size: 12px;
+
+  margin: 0;
+  color: #b2beb5;
+  margin-bottom: 0.7em;
+}
+
+.counter-number {
+  margin: 0 1em;
+}

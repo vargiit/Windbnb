@@ -1,0 +1,38 @@
+input {
+  padding: 1em;
+  border-radius: 8px;
+  border: none;
+  outline: 1px solid gray;
+  margin-right: 5px;
+  width: min-content;
+}
+
+.input:focus {
+  outline: 1px solid #2962ff;
+}
+
+.input:focus + .blue-label {
+  color: #2962ff;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 3px;
+}
+
+.error {
+  outline: 1px solid red;
+}
+
+.error-label {
+  color: red;
+}
+
+.error:hover {
+  outline: 1px solid black;
+}
+
+.error:hover + .error-label {
+  color: black;
+}

@@ -1,0 +1,54 @@
+button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 11px;
+}
+
+.buttonContainer {
+  margin: 2em;
+}
+
+button:hover,
+button:focus {
+  background-color: darkgray;
+}
+
+.outline {
+  background-color: white;
+  outline: auto;
+  color: #3d5afe;
+}
+
+.outline:hover,
+.outline:focus {
+  background-color: #2962ff1a;
+}
+
+.text {
+  background: none;
+  color: #3d5afe;
+}
+
+.text:hover,
+.text:focus {
+  background: #2962ff1a;
+}
+
+.disableShadow {
+  color: #fff;
+  background: #3d5afe;
+}
+
+.disableShadow:hover,
+.disableShadow:focus {
+  background-color: #3d5afe;
+}
+
+.text-disabled {
+  background: #e0e0e0;
+}
