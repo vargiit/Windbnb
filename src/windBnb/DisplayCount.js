@@ -7,7 +7,7 @@ function DisplayCount() {
   return (
     <div>
       <label htmlFor="guests"></label>
-      <input id="guests" type="text" value={counter + counter2} />
+      <input id="guests" type="text" value={counter + counter2 + " Guests"} />
       <Counter childrens="Adults" counter={counter} setCounter={setCounter}>
         Age 13 or above
       </Counter>
