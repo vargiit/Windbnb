@@ -13,7 +13,13 @@ function DisplayCount() {
         <input
           id="guests"
           type="text"
-          value={totalGuests > 0 ? totalGuests + " guests" : ""}
+          value={
+            totalGuests > 0
+              ? totalGuests > 1
+                ? totalGuests + " guests"
+                : totalGuests + " guest"
+              : ""
+          }
         />
       </div>
       <Counter childrens="Adults" counter={counter} setCounter={setCounter}>
