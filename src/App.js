@@ -1,6 +1,6 @@
 import "./App.css";
 import Stay from "./windBnb/Stay";
-import Counter from "./windBnb/Counter";
+import DisplayCount from "./windBnb/DisplayCount";
 
 const stays = [
   {
@@ -36,7 +36,7 @@ function App() {
           <Stay key={index} stay={stay}></Stay>
         ))}
       </div>
-      <Counter childrens="Adults">Age 13 or above</Counter>
+      <DisplayCount></DisplayCount>
     </div>
   );
 }
