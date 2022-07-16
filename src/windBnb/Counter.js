@@ -1,9 +1,6 @@
-import { useState } from "react";
 import "./Counter.css";
 
 function Counter(props) {
-  // let [counter, setCounter] = useState(0);
-
   const decrement = () => {
     if (props.counter > 0) {
       props.setCounter((prev) => prev - 1);
