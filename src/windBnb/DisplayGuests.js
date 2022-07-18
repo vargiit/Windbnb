@@ -1,11 +1,10 @@
-import Counter from "./Counter";
+import Counter from "./counter";
 import { useState } from "react";
-import "./DisplayCount.css";
 
-function DisplayCount() {
-  let [counter, setCounter] = useState(0);
-  let [counter2, setCounter2] = useState(0);
-  let totalGuests = counter + counter2;
+function DisplayGuests() {
+  let [adultCount, setAdultCount] = useState(0);
+  let [childCount, setChildCount] = useState(0);
+  let totalGuests = adultCount + childCount;
   return (
     <div>
       <div className="float-container">
@@ -22,14 +21,14 @@ function DisplayCount() {
           }
         />
       </div>
-      <Counter childrens="Adults" counter={counter} setCounter={setCounter}>
+      <Counter title="Adults" counter={adultCount} setCounter={setAdultCount}>
         Age 13 or above
       </Counter>
-      <Counter childrens="Children" counter={counter2} setCounter={setCounter2}>
+      <Counter title="Children" counter={childCount} setCounter={setChildCount}>
         Age 2-12
       </Counter>
     </div>
   );
 }
 
-export default DisplayCount;
+export default DisplayGuests;

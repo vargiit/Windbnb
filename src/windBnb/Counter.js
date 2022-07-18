@@ -1,26 +1,26 @@
-import "./Counter.css";
+import "./counter.css";
 
-function Counter(props) {
+function Counter({ title, children, counter, setCounter }) {
   const decrement = () => {
-    if (props.counter > 0) {
-      props.setCounter((prev) => prev - 1);
+    if (counter > 0) {
+      setCounter((prev) => prev - 1);
     }
   };
 
   const increment = () => {
-    props.setCounter((prev) => prev + 1);
+    setCounter((prev) => prev + 1);
   };
 
   return (
     <div>
-      <p className="counter-tittle">{props.childrens}</p>
-      <p className="counter-subtittle">{props.children}</p>
+      <p className="counter-tittle">{title}</p>
+      <p className="counter-subtittle">{children}</p>
 
       <div className="counter-wrapper">
         <button className="increment-btn" onClick={increment}>
           +
         </button>
-        <span className="counter-number">{props.counter}</span>
+        <span className="counter-number">{counter}</span>
         <button className="decrement-btn" onClick={decrement}>
           -
         </button>
