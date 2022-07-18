@@ -9,17 +9,13 @@ function DisplayGuests() {
     <div>
       <div className="float-container">
         <label htmlFor="guests">Guests</label>
-        <input
-          id="guests"
-          type="text"
-          value={
-            totalGuests > 0
-              ? totalGuests > 1
-                ? totalGuests + " guests"
-                : totalGuests + " guest"
-              : ""
-          }
-        />
+        <div id="guests">
+          {totalGuests > 0
+            ? totalGuests > 1
+              ? totalGuests + " guests"
+              : totalGuests + " guest"
+            : ""}
+        </div>
       </div>
       <Counter title="Adults" counter={adultCount} setCounter={setAdultCount}>
         Age 13 or above
