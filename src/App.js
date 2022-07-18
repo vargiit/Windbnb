@@ -1,6 +1,6 @@
 import "./App.css";
 import Stay from "./windBnb/Stay";
-import DisplayCount from "./windBnb/DisplayCount";
+import DisplayGuests from "./windBnb/DisplayGuests";
 
 const stays = [
   {
@@ -36,7 +36,7 @@ function App() {
           <Stay key={index} stay={stay}></Stay>
         ))}
       </div>
-      <DisplayCount></DisplayCount>
+      <DisplayGuests></DisplayGuests>
     </div>
   );
 }
